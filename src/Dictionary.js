@@ -9,7 +9,6 @@ import "@fortawesome/free-brands-svg-icons";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./Dictionary.css";
 import { faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const Dictionary = () => {
@@ -35,29 +34,25 @@ const Dictionary = () => {
     <div className="Dictionary">
       <div className="row">
         <div className="col-md-5"></div>
-
         <div className="col-md-7">
           <div className="row">
-            <div className="col-md-1 d-flex justify-content-center align-items-center">
-              <FontAwesomeIcon icon={faSearch} className="fs-4" />
+            <div className="d-flex justify-content-center align-items-center w-auto">
+              <FontAwesomeIcon icon={faSearch} />
             </div>
-
-            <div className="col-md-11 p-0">
-              <form onSubmit={search}>
-                <input
-                  type="text"
-                  autoFocus={true}
-                  placeholder="enter a word..."
-                  onChange={handleKeyword}
-                />
-              </form>
-            </div>
+            <form onSubmit={search} className="w-auto p-0">
+              <input
+                type="text"
+                autoFocus={true}
+                placeholder="enter a word..."
+                onChange={handleKeyword}
+              />
+            </form>
           </div>
         </div>
       </div>
 
-      <div className="row">
-        <div className="col-md-5">img</div>
+      <div className="row Results pt-5">
+        <div className="col-md-5 d-none d-md-block">img</div>
 
         <div className="col-md-7">
           <Results results={results} />
