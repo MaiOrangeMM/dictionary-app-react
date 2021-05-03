@@ -5,5 +5,14 @@ input[type="text"] {
   border-left: none;
   border-right: none;
   border-bottom: solid 1px black;
-  font-size: 1rem;
+  font-size: 1.5rem;
+}
+
+h4::before {
+  content: "";
+  display: block;
+  background: black;
+  width: 20px;
+  height: 2px;
+  margin-bottom: 5px;
 }

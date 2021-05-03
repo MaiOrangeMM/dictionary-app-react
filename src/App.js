@@ -8,12 +8,7 @@ import "bootstrap/dist/js/bootstrap.bundle";
 function App() {
   return (
     <div className="container p-5">
-      <div className="row">
-        <div className="col-md-5">Img</div>
-        <div className="col-md-7">
-          <Dictionary />
-        </div>
-      </div>
+      <Dictionary />
     </div>
   );
 }
