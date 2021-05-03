@@ -1,3 +1,8 @@
+.Dictionary {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
 input,
 input[type="text"] {
   outline: none;
