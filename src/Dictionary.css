@@ -1,0 +1,9 @@
+input,
+input[type="text"] {
+  outline: none;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 1px black;
+  font-size: 1rem;
+}
