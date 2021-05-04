@@ -15,15 +15,29 @@ const Dictionary = () => {
   let [keyword, setKeyword] = useState("");
   let [results, setResults] = useState(null);
 
-  function handleResponse(response) {
+  function handleDictionaryResponse(response) {
     setResults(response.data[0]);
+  }
+
+  function handlePexelsResponse(response) {
+    console.log(response);
   }
 
   function search(event) {
     event.preventDefault();
 
     const apiUrl = `https://api.dictionaryapi.dev/api/v2/entries/en_US/${keyword}`;
-    axios.get(apiUrl).then(handleResponse);
+    axios.get(apiUrl).then(handleDictionaryResponse);
+
+    const pexelsApiKey =
+      "563492ad6f91700001000001982eac3e0f0d44ceb0c9fbf3c446cbce";
+
+    let pexelsApiUrl = `https://api.pexels.com/v1/search?query=${keyword}&per_page=1`;
+    axios
+      .get(pexelsApiUrl, {
+        headers: { Authorization: `Bearer ${pexelsApiKey}` },
+      })
+      .then(handlePexelsResponse);
   }
 
   function handleKeyword(event) {

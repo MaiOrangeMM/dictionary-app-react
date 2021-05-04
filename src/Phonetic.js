@@ -3,7 +3,7 @@ import React from "react";
 const Phonetic = (props) => {
   return (
     <div className="">
-      <h4 class="pt-1 pb-5">
+      <h4 className="pt-1 pb-5">
         <a
           href={props.phonetic.audio}
           target="_blank"
