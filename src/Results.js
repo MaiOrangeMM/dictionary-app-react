@@ -5,7 +5,7 @@ const Results = (props) => {
   if (props.results) {
     return (
       <div>
-        <h1 className="pb-4">{props.results.word}.</h1>
+        <h1 className="display-3 fw-bold pb-4">{props.results.word}.</h1>
         {props.results.meanings.map(function (meaning, index) {
           return (
             <div key={index}>

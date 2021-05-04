@@ -17,11 +17,12 @@ input[type="text"] {
   font-size: 1.4rem;
 }
 
-h4::before {
-  content: "";
-  display: block;
-  background: black;
-  width: 20px;
-  height: 2px;
-  margin-bottom: 5px;
+.Example::before {
+  content: " | ";
+  color: red;
+}
+
+.Synonym:not(:last-child)::after {
+  content: " • ";
+  color: grey;
 }
