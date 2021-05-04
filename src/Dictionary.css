@@ -18,8 +18,31 @@ input[type="text"] {
 }
 
 .Example::before {
-  content: " | ";
+  content: " • ";
   color: red;
+}
+
+.Phonetic {
+  position: relative;
+  line-height: 30px;
+  display: inline-block;
+}
+
+.Phonetic::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 100%;
+  transform: scaleX(0);
+  transform-origin: left;
+  height: 2px;
+  background: red;
+  transition: all ease 0.45s;
+}
+
+.Phonetic:hover:before {
+  transform: scaleX(1);
 }
 
 .Synonym:not(:last-child)::after {
