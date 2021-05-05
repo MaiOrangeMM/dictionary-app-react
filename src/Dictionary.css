@@ -3,6 +3,10 @@
   padding-right: 10%;
 }
 
+.Photo:hover {
+  filter: none !important;
+}
+
 .Results {
   margin-top: 5%;
 }
@@ -24,7 +28,13 @@ input[type="text"] {
   color: red;
 }
 
+.Examplep:nth-child(6) {
+  text-transform: capitalize;
+}
+
 .Phonetic {
+  border: 0;
+  background-color: white;
   position: relative;
   line-height: 30px;
   display: inline-block;
@@ -43,7 +53,7 @@ input[type="text"] {
   transition: all ease 0.45s;
 }
 
-.Phonetic:hover:before {
+.Phonetic:hover::before {
   transform: scaleX(1);
 }
 

@@ -15,7 +15,7 @@ function App() {
         <img src={logo} width="50" height="50" alt="design-mai-logo" />
       </div>
       <div className="container p-5">
-        <Dictionary />
+        <Dictionary defaulKeyword="time" />
       </div>
     </section>
   );

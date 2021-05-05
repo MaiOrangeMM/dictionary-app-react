@@ -1,4 +1,5 @@
 import React from "react";
+import Example from "./Example";
 import Synonyms from "./Synonyms";
 
 const Meaning = (props) => {
@@ -7,12 +8,14 @@ const Meaning = (props) => {
       <h4 className="text-capitalize">{props.meaning.partOfSpeech}</h4>
       {props.meaning.definitions.map(function (definition, index) {
         if (index < 2) {
+          console.log(index);
           return (
             <div key={index}>
               <p className="Definition pt-2 mb-2 fw-bold">
                 {definition.definition}
               </p>
-              <p className="Example mb-2">{definition.example}</p>
+
+              <Example example={definition.example} />
               <Synonyms synonyms={definition.synonyms} />
             </div>
           );
