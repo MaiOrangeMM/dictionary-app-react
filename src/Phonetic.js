@@ -3,6 +3,7 @@ import React from "react";
 const Phonetic = (props) => {
   function playSound() {
     const audio = document.getElementById("audio");
+    audio.load();
     audio.play();
   }
 
