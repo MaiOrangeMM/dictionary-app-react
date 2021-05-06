@@ -17,6 +17,22 @@ function App() {
       <div className="container p-5">
         <Dictionary defaulKeyword="time" />
       </div>
+      <div className="container mt-5 py-5 d-flex justify-content-center align-items-center">
+        <a
+          className="footerlink mx-3"
+          href="https://github.com/MayElectric/dictionary-app-react"
+          target="_blank"
+        >
+          Github
+        </a>
+        <a
+          className="footerlink mx-3"
+          href="https://www.linkedin.com/in/mai-nguyen-79311a1b3/"
+          target="_blank"
+        >
+          LinkIn
+        </a>
+      </div>
     </section>
   );
 }

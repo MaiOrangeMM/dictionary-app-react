@@ -40,7 +40,14 @@ input[type="text"] {
   display: inline-block;
 }
 
-.Phonetic::before {
+.footerlink {
+  text-decoration: none;
+  color: black;
+  position: relative;
+}
+
+.Phonetic::before,
+.footerlink::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -53,8 +60,13 @@ input[type="text"] {
   transition: all ease 0.45s;
 }
 
-.Phonetic:hover::before {
+.Phonetic:hover::before,
+.footerlink:hover::before {
   transform: scaleX(1);
+}
+
+.footerlink:hover {
+  color: #000;
 }
 
 .Synonym:not(:last-child)::after {
