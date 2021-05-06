@@ -22,6 +22,7 @@ function App() {
           className="footerlink mx-3"
           href="https://github.com/MayElectric/dictionary-app-react"
           target="_blank"
+          rel="noreferrer"
         >
           Github
         </a>
@@ -29,6 +30,7 @@ function App() {
           className="footerlink mx-3"
           href="https://www.linkedin.com/in/mai-nguyen-79311a1b3/"
           target="_blank"
+          rel="noreferrer"
         >
           LinkIn
         </a>
